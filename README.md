@@ -1,7 +1,8 @@
 # Advanced Voting Machine (Verilog)
 
-This project simulates an **advanced voting machine** using Verilog HDL. It features:
+This project implements a digital voting machine using a Finite State Machine (FSM) in Verilog. It is designed for simulation in Vivado or any Verilog-compatible simulator and demonstrates advanced digital design concepts suitable for academic or professional portfolios.
 
+FEATURES:
 - Password-protected voting access
 - Five candidate options (A, B, C, D, E)
 - Tie detection
@@ -27,6 +28,17 @@ This project simulates an **advanced voting machine** using Verilog HDL. It feat
 ## Simulation
 
 Use a Verilog simulator like ModelSim, Icarus Verilog, or Vivado to run the testbench.
+## Seven-Segment Display Encoding
+
+| Winner | Displayed Letter | Seven-Segment Code (`abcdefg`) |
+|--------|------------------|-------------------------------|
+| A      | A                | 0001000                       |
+| B      | b                | 0000011                       |
+| C      | C                | 1000110                       |
+| D      | d                | 0100001                       |
+| E      | E                | 0001110                       |
+| Tie    | -                | 1111110                       |
+
 
 ## Author
 
